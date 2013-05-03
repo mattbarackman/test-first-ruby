@@ -27,24 +27,5 @@ end
 puts sort([4,5,6,20,3,300,-432,3,9,349]).inspect
 
 
-[1,2,3,4,5]
-
-length = 5
-
-index = 2
-
-5 / 2 = 2
-
-array[arrayLength / 2]
-
-
-[1,2,3,4]
-
-4 / 2 = 2
-
-(array[arrayLength] + array[arrayLength-1]) / 2
-
-
-
 
 
