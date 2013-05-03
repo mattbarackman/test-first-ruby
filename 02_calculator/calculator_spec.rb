@@ -77,23 +77,53 @@ end
 # once the above tests pass,
 # write tests and code for the following:
 
-describe "#multiply" do
+describe "multiply" do
 
-  it "multiplies two numbers"
+  it "multiplies two numbers" do
+    multiply(7, 3).should == 21
+  end
 
-  it "multiplies several numbers"
-
+  it "multiplies several numbers" do
+    multiply(7, 3, 4).should == 84
+  end
 end
 
-describe "#power" do
-  it "raises one number to the power of another number"
+describe "power" do
+  
+  it "all numbers raised to power of 0 equal 1" do
+    power(9,0).should == 1 && power(500, 0).should == 1
+  end
+
+  it "raises one number to the power of the second" do
+    power(4,2).should == 16
+  end
+
+  it "raises one number to the power of a float" do
+    power(4,0.5).should == 2
+  end
 end
 
 # http://en.wikipedia.org/wiki/Factorial
-describe "#factorial" do
-  it "computes the factorial of 0"
-  it "computes the factorial of 1"
-  it "computes the factorial of 2"
-  it "computes the factorial of 5"
-  it "computes the factorial of 10"
+describe "factorial" do
+  
+  it "computes the factorial of 0" do
+     factorial(0).should == 1
+  end 
+
+  it "computes the factorial of 1" do
+     factorial(1).should == 1
+  end    
+    
+  it "computes the factorial of 2" do
+     factorial(2).should == 2
+  end    
+    
+  it "computes the factorial of 5" do
+     factorial(5).should == 120
+  end    
+    
+  it "computes the factorial of 10" do
+     factorial(10).should == 3628800
+  end    
+
 end
